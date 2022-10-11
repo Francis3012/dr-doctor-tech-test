@@ -1,0 +1,44 @@
+.user-otp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin-top: -8em;
+    h1 {
+        font-size: 1em;
+        text-align: center;
+        color: hsla(160, 100%, 37%, 1);
+    }
+    input {
+        padding: 2em;
+        border-radius: 25px;
+        width: 100%;
+        margin-top: 2em;
+        border: none;
+        outline: none;
+    }
+    button {
+        padding: 1em;
+        border-radius: 25px;
+        width: 75%;
+        margin-top: 1em;
+        border: none;
+        outline: none;
+        background-color: hsl(160deg, 100%, 37%);
+        color: #fff;
+    }
+    p {
+        color: hsl(0, 61%, 45%, 1);
+        font-size: 1rem;
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .user-otp {
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

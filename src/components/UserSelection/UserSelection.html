@@ -1,0 +1,11 @@
+
+<section class="user-selection">
+    <h1>Please select how you wish to receive a one-time code to complete the login process</h1>
+    <select name="SelectedOption" class="container" v-model="selectedOption">
+        <option value="mobile">Mobile</option>
+        <option value="landline">Landline</option>
+        <option value="email">Email</option>
+    </select>
+    <button type="button" class="button" @click="goTo(selectedOption)">Get Code</button>
+</section>
+

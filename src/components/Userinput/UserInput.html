@@ -1,0 +1,39 @@
+<form class="user-input" @submit.prevent="goTo()">
+    <div>
+        <span class="icon">
+            <IconName />
+        </span>
+        <input 
+            type="text" 
+            v-model="lastName" 
+            class="input"
+            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            maxlength = "50"
+            placeholder="Please enter your last name"
+            required>
+    </div>
+    <div>
+        <span class="icon">
+            <IconDate />
+        </span>
+        <input 
+            type="date" 
+            v-model="dateOfBirth" 
+            class="input" 
+            placeholder="Please enter your date of birth"
+            required>
+    </div>
+    <div>
+        <span class="icon">
+            <IconPostCode />
+        </span>
+        <input 
+            type="text" 
+            v-model="postCode" 
+            class="input" 
+            placeholder="Please enter your postcode"
+            pattern="^\s*(?:\w\s*){5,7}$"
+            required>
+    </div>
+    <button type="submit" class="button">Continue</button>
+</form>

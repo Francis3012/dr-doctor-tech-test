@@ -1,0 +1,11 @@
+.user-account {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin-top: -4em;
+    h1 {
+        font-size: 2em;
+        color: hsla(160, 100%, 37%, 1);
+    }
+}

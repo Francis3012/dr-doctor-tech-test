@@ -1,0 +1,10 @@
+
+<section class="user-otp">
+  <h1>Please enter your one-time code to complete the login process</h1>
+  <input v-model="otp" placeholder="One Time Code">
+  <button type="button" @click="validateOTP(otp)">Login</button>
+  <template v-if="showError">
+    <p>{{errorMsg}}</p>
+  </template>
+</section>
+
